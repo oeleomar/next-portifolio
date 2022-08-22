@@ -18,9 +18,7 @@ export default function Home() {
         <SectionComponent />
       </main>
 
-      <footer>
-        <span>Comming Soon</span>
-      </footer>
+      <footer></footer>
     </div>
   );
 }
