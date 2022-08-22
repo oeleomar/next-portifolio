@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { SectionComponent } from '../components/sectionComponent';
+import { SectionComponent } from '../components/SectionComponent';
 
 export default function Home() {
   return (
