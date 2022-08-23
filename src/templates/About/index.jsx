@@ -1,4 +1,6 @@
 import P from 'prop-types';
+import './styles';
+
 import { ButtonComponent } from '../../components/ButtonComponent';
 import { DescriptionComponent } from '../../components/DescriptionComponent';
 import { Header } from '../../components/Header';
@@ -11,18 +13,7 @@ export const About = ({ data: { title = '', menu = {}, about = {} } = {} }) => {
   console.log(menu);
   return (
     <>
-      <Header menu={menu} />
-
-      <main>
-        <SectionComponent>
-          <TextComponent>
-            <TitleComponent>{about.title}</TitleComponent>
-            <DescriptionComponent>{about.description}</DescriptionComponent>
-          </TextComponent>
-          <ImageComponent src={about} />
-        </SectionComponent>
-      </main>
-      <footer></footer>
+      <TitleComponent>CommingSoon</TitleComponent>
     </>
   );
 };
