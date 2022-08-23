@@ -8,6 +8,7 @@ import { DescriptionComponent } from '../../components/DescriptionComponent';
 import { SectionComponent } from '../../components/SectionComponent';
 import { TextComponent } from '../../components/TextComponent';
 import { TitleComponent } from '../../components/TitleComponent';
+import { ImageComponent } from '../../components/ImageComponent';
 
 export const Home = ({ data = {} }) => {
   const { menu, home } = data;
@@ -27,19 +28,12 @@ export const Home = ({ data = {} }) => {
           <TextComponent>
             <TitleComponent>{home.title}</TitleComponent>
             <DescriptionComponent>{home.description}</DescriptionComponent>
-            <div>
-              {button.map((but) => {
-                return (
-                  <ButtonComponent
-                    key={but.button_title}
-                    href={but.button_link}
-                  >
-                    {but.button_title}
-                  </ButtonComponent>
-                );
-              })}
-            </div>
           </TextComponent>
+          <ImageComponent src={home}>
+            <div>
+              <ButtonComponent data={button} />
+            </div>
+          </ImageComponent>
         </SectionComponent>
       </main>
       <footer></footer>

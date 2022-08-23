@@ -3,17 +3,14 @@ import styled, { css } from 'styled-components';
 export const Link = styled.a`
   ${({ theme }) => css`
     display: inline-block;
-    margin: 1rem 2rem;
-    padding: 1rem 1rem;
-    width: 10rem;
+    margin: 1rem 0.5rem;
+    width: 5rem;
     background: ${theme.colors.primary};
-    border-radius: 2rem;
+    color: ${theme.colors.dark.first};
+    border-radius: 5px;
+
     font-size: ${theme.fonts.sizes.small};
     font-family: inherit;
     cursor: pointer;
-    && div {
-      display: flex;
-      justify-content: center;
-    }
   `}
 `;

@@ -1,15 +1,16 @@
 export const theme = {
   colors: {
     dark: {
-      first: '#212121',
-      second: '#262626',
-      third: '#202020',
+      first: '#151515',
+      second: '#202020',
+      third: '#222222',
       fourth: '#2b2b2b',
     },
     white: 'rgb(228, 228, 228)',
-    primary: '#2E0249',
-    secundary: '#570A57',
-    third: '#A91079',
+    primary: '#00FCB9',
+    secundary: '#0BE2E6',
+    third: '#0BE66E',
+    fourth: '#23F200',
   },
   fonts: {
     family: {

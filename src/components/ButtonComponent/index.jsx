@@ -1,10 +1,29 @@
 import P from 'prop-types';
 import * as Styled from './styles';
+import { LinkedinSquare } from '@styled-icons/boxicons-logos/LinkedinSquare';
+import { Instagram } from '@styled-icons/boxicons-logos/Instagram';
+import { Github } from '@styled-icons/boxicons-logos/Github';
 
-export const ButtonComponent = ({ children, href }) => {
-  return <Styled.Link href={href}>{children}</Styled.Link>;
+export const ButtonComponent = ({ data = [] }) => {
+  const { button_link: linkedIn } = data[0];
+  const { button_link: GithubLink } = data[1];
+  const { button_link: InstagramLink } = data[2];
+
+  return (
+    <>
+      <Styled.Link href={linkedIn}>
+        <LinkedinSquare />
+      </Styled.Link>
+      <Styled.Link href={InstagramLink}>
+        <Instagram />
+      </Styled.Link>
+      <Styled.Link href={GithubLink}>
+        <Github />
+      </Styled.Link>
+    </>
+  );
 };
 
 ButtonComponent.propTypes = {
-  children: P.node.isRequired,
+  home: P.array,
 };
