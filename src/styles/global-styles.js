@@ -11,6 +11,21 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
+
+  body {
+    background-color: ${({ theme }) => theme.colors.dark.first};
+    font-family: ${({ theme }) => theme.fonts.family.secundary};
+  }
+
+  h1, h2, h3 {
+    font-family: ${({ theme }) => theme.fonts.family.primary};
+    font-weight: 800;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    color: ${({ theme }) => theme.colors.white};
+  }
+
   a {
     text-decoration: none;
   }

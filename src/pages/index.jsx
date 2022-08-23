@@ -1,26 +1,10 @@
 import Head from 'next/head';
+import { Home } from '../templates/home';
 
-import { SectionComponent } from '../components/SectionComponent';
 import { mapData } from './api/mapData';
 
-export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>Portifólio || Eleomar Doneles</title>
-        <meta
-          name="description"
-          content="Portifólio pessoal do Eleomar Dorneles"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <SectionComponent>Olá mudno</SectionComponent>
-      </main>
-
-      <footer></footer>
-    </div>
-  );
+export default function Index({ data }) {
+  return <Home data={data} />;
 }
 
 export async function getStaticProps() {

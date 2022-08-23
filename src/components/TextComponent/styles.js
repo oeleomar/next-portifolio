@@ -2,6 +2,6 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    text-aling: center;
+    max-width: 40%;
   `}
 `;
