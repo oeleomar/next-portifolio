@@ -1,5 +1,4 @@
 import P from 'prop-types';
-import Head from 'next/head';
 
 import { useState } from 'react';
 import { ButtonComponent } from '../../components/ButtonComponent';
@@ -9,20 +8,14 @@ import { SectionComponent } from '../../components/SectionComponent';
 import { TextComponent } from '../../components/TextComponent';
 import { TitleComponent } from '../../components/TitleComponent';
 import { ImageComponent } from '../../components/ImageComponent';
+import { Header } from '../../components/Header';
 
 export const Home = ({ data = {} }) => {
   const { menu, home } = data;
   const [button, setButton] = useState(home.button_links);
   return (
     <>
-      <Head>
-        <title>Portifólio || Eleomar Doneles</title>
-        <meta
-          name="description"
-          content="Portifólio pessoal do Eleomar Dorneles"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header menu={menu} />
       <main>
         <SectionComponent>
           <TextComponent>
