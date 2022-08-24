@@ -30,7 +30,10 @@ export const theme = {
     },
   },
   media: {
-    lessMedium: '(max-width: 768px)',
+    small: '(max-width: 600px)',
+    medium: '(min-width: 600px) and (max-width: 900px)',
+    large: '(min-width: 900px) and (max-width: 1200px)',
+    xlarge: '(min-width: 1200px)',
   },
   spacings: {
     xsmall: '10rem',

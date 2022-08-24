@@ -22,5 +22,5 @@ export const NavLinks = ({ links = {} }) => {
 };
 
 NavLinks.propTypes = {
-  children: P.object,
+  links: P.object,
 };

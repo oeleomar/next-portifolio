@@ -1,10 +1,18 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 
-export const TextComponent = ({ children }) => {
-  return <Styled.Container>{children}</Styled.Container>;
+import { TitleComponent } from '../TitleComponent';
+import { DescriptionComponent } from '../DescriptionComponent';
+
+export const TextComponent = ({ data = {} }) => {
+  return (
+    <Styled.Container>
+      <TitleComponent>{data.title}</TitleComponent>
+      <DescriptionComponent>{data.description}</DescriptionComponent>
+    </Styled.Container>
+  );
 };
 
 TextComponent.propTypes = {
-  children: P.node.isRequired,
+  data: P.object,
 };

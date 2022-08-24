@@ -18,10 +18,7 @@ export const Home = ({ data = {} }) => {
       <Header menu={menu} />
       <main>
         <SectionComponent>
-          <TextComponent>
-            <TitleComponent>{home.title}</TitleComponent>
-            <DescriptionComponent>{home.description}</DescriptionComponent>
-          </TextComponent>
+          <TextComponent data={home} />
           <ImageComponent src={home}>
             <div>
               <ButtonComponent data={button} />
