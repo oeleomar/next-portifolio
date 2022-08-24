@@ -14,6 +14,6 @@ export const ImageComponent = ({ children, src }) => {
 };
 
 ImageComponent.propTypes = {
-  children: P.node.isRequired,
+  children: P.node,
   src: P.object,
 };

@@ -1,5 +1,7 @@
 import P from 'prop-types';
-import './styles';
+import styled from 'styled-components';
+
+import { Container } from '../../components/TextComponent/styles';
 
 import { ButtonComponent } from '../../components/ButtonComponent';
 import { DescriptionComponent } from '../../components/DescriptionComponent';
