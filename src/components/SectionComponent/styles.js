@@ -4,12 +4,22 @@ export const Container = styled.section`
   ${({ theme }) => css`
     max-width: 120rem;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+    @media ${theme.media.large} {
+      width: 90%;
+    }
+
+    @media ${theme.media.medium} {
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+    }
   `}
 `;

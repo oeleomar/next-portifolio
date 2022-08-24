@@ -16,5 +16,11 @@ export const Container = styled.div`
         top: 0%;
       }
     }
+
+    @media ${theme.media.medium} {
+      max-width: 90%;
+      margin-top: 0rem;
+      margin-bottom: 2rem;
+    }
   `}
 `;

@@ -6,6 +6,8 @@ export const Container = styled.div`
     animation: topDown 1s;
     max-width: 50rem;
     max-height: 50rem;
+    margin-top: 8rem;
+
     > div {
       position: absolute;
       top: 0%;
@@ -25,6 +27,27 @@ export const Container = styled.div`
       100% {
         opacity: 1;
         top: 0%;
+      }
+    }
+
+    @media ${theme.media.large} {
+      margin-top: 8rem;
+    }
+
+    @media ${theme.media.medium} {
+      margin-top: 8rem;
+      margin-bottom: 5rem;
+      > img {
+        max-width: 40rem;
+        max-height: 40rem;
+      }
+    }
+    @media ${theme.media.small} {
+      margin-top: 8rem;
+      margin-bottom: 5rem;
+      > img {
+        max-width: 30rem;
+        max-height: 30rem;
       }
     }
   `}

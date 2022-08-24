@@ -12,5 +12,9 @@ export const Link = styled.a`
     font-size: ${theme.fonts.sizes.small};
     font-family: inherit;
     cursor: pointer;
+
+    @media ${theme.media.small} {
+      width: 3.5rem;
+    }
   `}
 `;
