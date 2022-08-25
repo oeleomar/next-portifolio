@@ -37,6 +37,7 @@ export const Container = styled.header`
 
       > div nav ul li {
         margin: 5rem 0;
+        text-align: center;
       }
     } ;
   `}
