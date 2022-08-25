@@ -11,6 +11,7 @@ export const Container = styled.section`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
+    position: relative;
 
     @media ${theme.media.large} {
       width: 90%;

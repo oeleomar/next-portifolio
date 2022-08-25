@@ -9,11 +9,11 @@ export const Container = styled.div`
     @keyframes downTop {
       0% {
         opacity: 0;
-        top: +20%;
+        transform: translateY(20%);
       }
       100% {
         opacity: 1;
-        top: 0%;
+        transform: translateY(0);
       }
     }
 

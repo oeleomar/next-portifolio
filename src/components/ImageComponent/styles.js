@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     position: relative;
-    animation: topDown 1s;
+
+    animation: topDownImage 1s;
+    -webkit-animation: topDownImage 1s;
     max-width: 50rem;
     max-height: 50rem;
     margin-top: 8rem;
@@ -27,6 +29,17 @@ export const Container = styled.div`
       100% {
         opacity: 1;
         top: 0%;
+      }
+    }
+
+    @keyframes topDownImage {
+      0% {
+        opacity: 0;
+        transform: translateY(-20%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
