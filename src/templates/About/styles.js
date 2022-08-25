@@ -8,8 +8,6 @@ import { Container as ImageContainer } from '../../components/ImageComponent/sty
 
 export const Home = styled.div`
   ${({ theme }) => css`
-    padding-top: 8rem;
-
     > ${SectionContainer} ${TextComponent} {
       padding: 2rem;
       position: relative;
@@ -26,6 +24,10 @@ export const Home = styled.div`
       border-right: 5px;
       width: 40%;
       animation: goBottom 1s;
+      opacity: 0;
+      visibility: hidden;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
     }
 
     > ${SectionContainer} ${TextComponent}::before {
@@ -39,7 +41,11 @@ export const Home = styled.div`
       border-left: 5px;
       width: 40%;
       overflow-y: hidden;
+      opacity: 0;
+      visibility: hidden;
       animation: goTop 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
     }
 
     @keyframes goTop {

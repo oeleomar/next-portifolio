@@ -32,6 +32,11 @@ export const Container = styled.div`
 
     @media ${theme.media.large} {
       margin-top: 8rem;
+
+      > img {
+        max-width: 45rem;
+        max-height: 45rem;
+      }
     }
 
     @media ${theme.media.medium} {
