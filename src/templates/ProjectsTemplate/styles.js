@@ -10,8 +10,21 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       background: ${theme.colors.dark.third};
       border-radius: 20px;
       padding: 0 5rem;
-
       padding-bottom: 5rem;
+      animation: downTop 1.5s;
+    }
+
+    @keyframes downTop {
+      0% {
+        transform: translateY(20%);
+        opacity: 0;
+        visibility: hidden;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
     }
 
     > .mainContainer .buttonContainer {
@@ -19,7 +32,7 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
     }
     > .mainContainer .buttonContainer button {
       background: ${theme.colors.dark.first};
-      border: none;
+      border: 1px solid ${theme.colors.dark.first};
       color: ${theme.colors.white};
       font-size: ${theme.fonts.sizes.small};
       padding: 0.5rem 0rem;
@@ -48,14 +61,17 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
         margin-top: 25rem;
         margin-top: 10rem;
       }
-
-      > .mainContainer .projectsContainer {
-      }
     }
 
     @media ${theme.media.small} {
+      align-items: flex-end;
+      margin-top: 5rem;
       > .mainContainer {
         padding: 0 2rem 2rem 2rem;
+      }
+
+      > .mainContainer .buttonContainer button {
+        width: 6rem;
       }
     }
   `}

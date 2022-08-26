@@ -12,6 +12,7 @@ export function ProjectsTemplate({ menu = {}, projects = [] }) {
   const button2 = useRef(null);
   const button3 = useRef(null);
   const button4 = useRef(null);
+  const projectSection = useRef(null);
 
   const cleanClass = () => {
     button1.current.className = '';
@@ -21,7 +22,9 @@ export function ProjectsTemplate({ menu = {}, projects = [] }) {
   };
 
   const handleChange = (e, value = 'all') => {
+    setFilteredProjects([]);
     cleanClass();
+
     e.target.className = 'active';
     if (value === 'all') {
       setFilteredProjects(projects);
@@ -59,6 +62,7 @@ export function ProjectsTemplate({ menu = {}, projects = [] }) {
 
   useEffect(() => {
     setProject(filteredProjects);
+    projectSection.className = 'animate';
   }, [filteredProjects]);
 
   return (
@@ -98,7 +102,7 @@ export function ProjectsTemplate({ menu = {}, projects = [] }) {
                 Difícil
               </button>
             </div>
-            <div className="projectsContainer">
+            <div className="projectsContainer" ref={projectSection}>
               {project.map((val) => (
                 <ProjectComponent project={val} key={val.title} />
               ))}
