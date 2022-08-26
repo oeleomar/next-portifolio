@@ -1,8 +1,8 @@
 import P from 'prop-types';
-import * as Styled from './styles';
 import Link from 'next/link';
+import * as Styled from './styles';
 
-export const NavLinks = ({ links = {} }) => {
+export function NavLinks({ links = {} }) {
   const { menu_links } = links;
   return (
     <Styled.NavBar>
@@ -19,7 +19,7 @@ export const NavLinks = ({ links = {} }) => {
       </ul>
     </Styled.NavBar>
   );
-};
+}
 
 NavLinks.propTypes = {
   links: P.object,

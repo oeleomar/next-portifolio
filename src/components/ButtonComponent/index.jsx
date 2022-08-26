@@ -1,10 +1,10 @@
 import P from 'prop-types';
-import * as Styled from './styles';
 import { LinkedinSquare } from '@styled-icons/boxicons-logos/LinkedinSquare';
 import { Instagram } from '@styled-icons/boxicons-logos/Instagram';
 import { Github } from '@styled-icons/boxicons-logos/Github';
+import * as Styled from './styles';
 
-export const ButtonComponent = ({ data = [] }) => {
+export function ButtonComponent({ data = [] }) {
   const { button_link: linkedIn } = data[0];
   const { button_link: GithubLink } = data[1];
   const { button_link: InstagramLink } = data[2];
@@ -22,7 +22,7 @@ export const ButtonComponent = ({ data = [] }) => {
       </Styled.Link>
     </>
   );
-};
+}
 
 ButtonComponent.propTypes = {
   home: P.array,

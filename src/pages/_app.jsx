@@ -1,14 +1,14 @@
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../styles/global-styles';
-import { theme } from '../styles/theme.js';
 import Head from 'next/head';
 import Script from 'next/script';
+import { GlobalStyles } from '../styles/global-styles';
+import { theme } from '../styles/theme.js';
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portifólio || Eleomar Doneles</title>
         <meta

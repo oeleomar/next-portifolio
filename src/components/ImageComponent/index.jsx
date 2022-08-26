@@ -1,17 +1,17 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 
-export const ImageComponent = ({ children, src }) => {
+export function ImageComponent({ children, src }) {
   const {
     image: { data: { attributes: { url, alternativeText } = {} } = {} } = {},
   } = src;
   return (
     <Styled.Container>
-      <img src={url} alt={alternativeText}></img>
+      <img src={url} alt={alternativeText} />
       {children}
     </Styled.Container>
   );
-};
+}
 
 ImageComponent.propTypes = {
   children: P.node,

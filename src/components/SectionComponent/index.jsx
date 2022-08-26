@@ -1,7 +1,7 @@
-import * as Styled from './styles';
 import { LinkedinSquare } from '@styled-icons/boxicons-logos/LinkedinSquare';
 import { Github } from '@styled-icons/boxicons-logos/Github';
+import * as Styled from './styles';
 
-export const SectionComponent = ({ children }) => {
+export function SectionComponent({ children }) {
   return <Styled.Container>{children}</Styled.Container>;
-};
+}

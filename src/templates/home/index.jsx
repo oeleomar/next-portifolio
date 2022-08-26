@@ -10,7 +10,7 @@ import { TitleComponent } from '../../components/TitleComponent';
 import { ImageComponent } from '../../components/ImageComponent';
 import { Header } from '../../components/Header';
 
-export const Home = ({ data = {} }) => {
+export function Home({ data = {} }) {
   const { menu, home } = data;
   const [button, setButton] = useState(home.button_links);
   return (
@@ -26,10 +26,10 @@ export const Home = ({ data = {} }) => {
           </ImageComponent>
         </SectionComponent>
       </main>
-      <footer></footer>
+      <footer />
     </>
   );
-};
+}
 
 Home.propTypes = {
   data: P.object.isRequired,

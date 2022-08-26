@@ -1,12 +1,12 @@
 import P from 'prop-types';
 import { useState } from 'react';
+import { Menu as MenuIcon } from '@styled-icons/material-outlined';
+import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { NavLinks } from '../NavLinks';
 import { TitleComponent } from '../TitleComponent';
 import * as Styled from './styles';
-import { Menu as MenuIcon } from '@styled-icons/material-outlined';
-import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 
-export const Header = ({ menu = {} }) => {
+export function Header({ menu = {} }) {
   const [visible, setVisible] = useState(false);
   return (
     <>
@@ -28,7 +28,7 @@ export const Header = ({ menu = {} }) => {
       </Styled.Container>
     </>
   );
-};
+}
 
 Header.propTypes = {
   menu: P.object,

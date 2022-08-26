@@ -1,9 +1,9 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 
-export const DescriptionComponent = ({ children = '' }) => {
+export function DescriptionComponent({ children = '' }) {
   return <Styled.Container>{children}</Styled.Container>;
-};
+}
 
 DescriptionComponent.propTypes = {
   children: P.string,
