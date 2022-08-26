@@ -7,25 +7,58 @@ import { Header } from '../../components/Header';
 
 export function ProjectsTemplate({ menu = {}, projects = [] }) {
   const [project, setProject] = useState([]);
-  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const button1 = useRef(null);
+  const button2 = useRef(null);
+  const button3 = useRef(null);
+  const button4 = useRef(null);
 
-  const handleChange = (value = 'all') => {
+  const cleanClass = () => {
+    button1.current.className = '';
+    button2.current.className = '';
+    button3.current.className = '';
+    button4.current.className = '';
+  };
+
+  const handleChange = (e, value = 'all') => {
+    cleanClass();
+    e.target.className = 'active';
     if (value === 'all') {
       setFilteredProjects(projects);
     }
 
     if (value === 'easy') {
-      projects.map((val) => {
-        console.log(filteredProjects);
-        if (val.difficulty === value) setFilteredProjects([val]);
-        return null;
+      const filter = [];
+      projects.forEach((element) => {
+        if (element.difficulty === value) {
+          filter.push(element);
+        }
       });
+      setFilteredProjects(filter);
+    }
+
+    if (value === 'medium') {
+      const filter = [];
+      projects.forEach((element) => {
+        if (element.difficulty === value) {
+          filter.push(element);
+        }
+      });
+      setFilteredProjects(filter);
+    }
+    if (value === 'hard') {
+      const filter = [];
+      projects.forEach((element) => {
+        if (element.difficulty === value) {
+          filter.push(element);
+        }
+      });
+      setFilteredProjects(filter);
     }
   };
 
   useEffect(() => {
     setProject(filteredProjects);
-    console.log(filteredProjects);
   }, [filteredProjects]);
 
   return (
@@ -35,17 +68,34 @@ export function ProjectsTemplate({ menu = {}, projects = [] }) {
         <Styled.SectionDiv>
           <div className="mainContainer">
             <div className="buttonContainer">
-              <button type="button" onClick={() => handleChange('all')}>
+              <button
+                type="button"
+                onClick={(e) => handleChange(e, 'all')}
+                className="button active"
+                ref={button1}
+              >
                 Todos
               </button>
-              <button type="button" onClick={() => handleChange('easy')}>
+              <button
+                type="button"
+                onClick={(e) => handleChange(e, 'easy')}
+                ref={button2}
+              >
                 Facil
               </button>
-              <button type="button" onClick={() => handleChange('medium')}>
+              <button
+                type="button"
+                onClick={(e) => handleChange(e, 'medium')}
+                ref={button3}
+              >
                 Médio
               </button>
-              <button type="button" onClick={() => handleChange('hard')}>
-                Dificil
+              <button
+                type="button"
+                onClick={(e) => handleChange(e, 'hard')}
+                ref={button4}
+              >
+                Difícil
               </button>
             </div>
             <div className="projectsContainer">

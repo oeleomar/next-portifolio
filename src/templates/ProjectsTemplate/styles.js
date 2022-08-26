@@ -10,7 +10,7 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       background: ${theme.colors.dark.third};
       border-radius: 20px;
       padding: 0 5rem;
-      margin-top: 25rem;
+
       padding-bottom: 5rem;
     }
 
@@ -22,9 +22,10 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       border: none;
       color: ${theme.colors.white};
       font-size: ${theme.fonts.sizes.small};
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0rem;
+      width: 10rem;
       cursor: pointer;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     > .mainContainer .buttonContainer button.active {
@@ -39,11 +40,13 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
       gap: 2rem;
       justify-items: center;
+      transition: all 0.3s ease-in-out;
     }
 
     @media ${theme.media.large} {
       > .mainContainer {
         margin-top: 25rem;
+        margin-top: 10rem;
       }
 
       > .mainContainer .projectsContainer {
