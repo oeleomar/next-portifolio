@@ -12,7 +12,7 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       border-radius: 20px;
       padding: 0 5rem;
       padding-bottom: 5rem;
-      animation: downTop 1.5s;
+      animation: downTop 1s;
     }
 
     @keyframes downTop {
