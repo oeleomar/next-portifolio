@@ -5,12 +5,12 @@ export const mapData = (data = [{}]) => {
     attributes: {
       title = '',
       menu = {},
-      section_two_colimns = [],
+      section_two_colimns: sectionTwoColumns = [],
       project = [],
     } = {},
   } = data[0];
-  const home = section_two_colimns[0];
-  const about = section_two_colimns[1];
+  const home = sectionTwoColumns[0];
+  const about = sectionTwoColumns[1];
   const projects = mapProjects(project);
   return {
     title,

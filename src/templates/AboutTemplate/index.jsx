@@ -7,7 +7,7 @@ import { ImageComponent } from '../../components/ImageComponent';
 import { SectionComponent } from '../../components/SectionComponent';
 import { TextComponent } from '../../components/TextComponent';
 
-export const About = ({ data: { title = '', menu = {}, about = {} } = {} }) => {
+export function AboutTemplate({ data: { menu = {}, about = {} } = {} }) {
   return (
     <>
       <Header menu={menu} />
@@ -19,14 +19,13 @@ export const About = ({ data: { title = '', menu = {}, about = {} } = {} }) => {
           </SectionComponent>
         </Styled.Home>
       </main>
-      <footer></footer>
+      <footer />
     </>
   );
-};
+}
 
-About.propTypes = {
+AboutTemplate.propTypes = {
   data: P.object,
-  title: P.string,
   menu: P.object,
   about: P.object,
 };

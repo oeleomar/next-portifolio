@@ -3,15 +3,18 @@ export const mapProjects = (projects) => {
     const {
       title = '',
       difficulty = '',
-      text_component = [],
-      link_text: { link_github = '', link_preview = '' } = {},
+      text_component: textComponent = [],
+      link_text: {
+        link_github: linkGithub = '',
+        link_preview: linkPreview = '',
+      } = {},
     } = val;
     return {
       title,
       difficulty,
-      text_component,
-      link_github,
-      link_preview,
+      textComponent,
+      linkGithub,
+      linkPreview,
     };
   });
 };

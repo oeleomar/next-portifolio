@@ -1,10 +1,11 @@
-import { TitleComponent } from '../components/TitleComponent';
-import { About } from '../templates/About';
+/* eslint-disable no-shadow */
+
+import { AboutTemplate } from '../templates/AboutTemplate';
 import { mapData } from './api/mapData';
 import config from '../config/config';
 
 const about = ({ title, menu, about }) => {
-  return <About data={{ title, menu, about }} />;
+  return <AboutTemplate data={{ title, menu, about }} />;
 };
 
 export default about;

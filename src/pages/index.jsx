@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import P from 'prop-types';
 import { Home } from '../templates/home';
 
 import { mapData } from './api/mapData';
@@ -19,3 +20,7 @@ export async function getStaticProps() {
     },
   };
 }
+
+Index.propTypes = {
+  data: P.node,
+};
