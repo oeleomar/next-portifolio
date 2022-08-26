@@ -1,8 +1,8 @@
 import { ThemeProvider } from 'styled-components';
+import P from 'prop-types';
 import Head from 'next/head';
-import Script from 'next/script';
 import { GlobalStyles } from '../styles/global-styles';
-import { theme } from '../styles/theme.js';
+import { theme } from '../styles/theme';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -31,4 +31,8 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
+MyApp.propTypes = {
+  Component: P.node,
+  pageProps: P.node,
+};
 export default MyApp;

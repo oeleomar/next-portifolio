@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import P from 'prop-types';
 import { Home } from '../templates/home';
 

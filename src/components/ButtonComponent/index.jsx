@@ -4,7 +4,7 @@ import { Instagram } from '@styled-icons/boxicons-logos/Instagram';
 import { Github } from '@styled-icons/boxicons-logos/Github';
 import * as Styled from './styles';
 
-export function ButtonComponent({ data = [] }) {
+export const ButtonComponent = ({ data = [] }) => {
   const { button_link: linkedIn } = data[0];
   const { button_link: GithubLink } = data[1];
   const { button_link: InstagramLink } = data[2];
@@ -22,8 +22,8 @@ export function ButtonComponent({ data = [] }) {
       </Styled.Link>
     </>
   );
-}
+};
 
 ButtonComponent.propTypes = {
-  home: P.array,
+  data: P.array,
 };
