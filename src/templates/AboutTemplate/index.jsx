@@ -1,7 +1,6 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 
-import { Container } from '../../components/TextComponent/styles';
 import { Header } from '../../components/Header';
 import { ImageComponent } from '../../components/ImageComponent';
 import { SectionComponent } from '../../components/SectionComponent';
