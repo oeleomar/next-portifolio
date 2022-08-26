@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { Container as SectionContainer } from '../../components/SectionComponent/styles';
+import { NavBar } from '../../components/NavLinks/styles';
 
 export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
   ${({ theme }) => css`
@@ -54,6 +55,7 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       gap: 2rem;
       justify-items: center;
       transition: all 0.3s ease-in-out;
+      min-height: 25rem;
     }
 
     @media ${theme.media.large} {

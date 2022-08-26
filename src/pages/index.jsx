@@ -21,5 +21,5 @@ export async function getStaticProps() {
 }
 
 Index.propTypes = {
-  data: P.node,
+  data: P.object,
 };
