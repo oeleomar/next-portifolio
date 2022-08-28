@@ -3,9 +3,15 @@ import { Home } from '../templates/home';
 
 import { mapData } from './api/mapData';
 import config from '../config/config';
+import { HeadComponent } from '../components/HeadComponent';
 
 export default function Index({ data }) {
-  return <Home data={data} />;
+  return (
+    <>
+      <HeadComponent />
+      <Home data={data} />
+    </>
+  );
 }
 
 export async function getStaticProps() {

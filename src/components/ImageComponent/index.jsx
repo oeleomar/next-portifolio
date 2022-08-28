@@ -7,7 +7,7 @@ export function ImageComponent({ children, src }) {
   } = src;
   return (
     <Styled.Container>
-      <img src={url} alt={alternativeText} />
+      <img src={url} alt="img" />
       {children}
     </Styled.Container>
   );
