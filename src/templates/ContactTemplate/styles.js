@@ -7,7 +7,7 @@ export const Container = styled.div`
     background: ${theme.colors.dark.third};
     margin: 0 auto;
     margin-bottom: 2rem;
-    padding: 5rem;
+    padding: 1rem 5rem;
     border-radius: 20px;
     width: 50%;
     min-width: 30rem;
@@ -29,15 +29,15 @@ export const Container = styled.div`
 
     @media ${theme.media.large} {
       margin-top: 8rem;
+      padding: 1rem 3rem;
     }
 
     @media ${theme.media.medium} {
       width: 80%;
-      padding: 3rem;
     }
     @media ${theme.media.small} {
       transform: translateY(0);
-      padding: 1.5rem;
+      padding: 1rem 1.5rem;
     }
   `}
 `;
@@ -113,7 +113,7 @@ export const FormContainer = styled.div`
 
 export const ButtonContainer = styled.div`
   ${({ theme }) => css`
-    transform: translateY(-120%);
+    transform: translateY(-80%);
     background: ${theme.colors.dark.third};
     max-width: 20rem;
     margin: 0 auto;

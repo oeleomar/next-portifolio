@@ -13,8 +13,12 @@ export const Container = styled.div`
     border-radius: 20px;
     animation: downTop 1s;
 
-    @media ${theme.media.medium} {
+    @media ${theme.media.large} {
+      padding: 1rem;
       margin-top: 10rem;
+    }
+
+    @media ${theme.media.medium} {
     }
 
     @keyframes downTop {
