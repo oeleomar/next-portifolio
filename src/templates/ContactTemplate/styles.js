@@ -118,22 +118,6 @@ export const ButtonContainer = styled.div`
     max-width: 20rem;
     margin: 0 auto;
     border-radius: 20px 20px 0 0;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    animation: topDown 1s;
-
-    @keyframes topDown {
-      0% {
-        transform: translateY(-140%);
-        opacity: 0;
-        visibility: hidden;
-      }
-      100% {
-        transform: translateY(-120%);
-        opacity: 1;
-        visibility: visible;
-      }
-    }
 
     @media ${theme.media.small} {
       transform: translateY(0);
