@@ -11,7 +11,7 @@ export const Container = styled.div`
     border-radius: 20px;
     width: 50%;
     min-width: 30rem;
-    margin-top: 7rem;
+    margin-top: 10rem;
     animation: downTop 1s;
 
     @keyframes downTop {
@@ -28,7 +28,7 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.large} {
-      margin-top: 8rem;
+      margin-top: 10rem;
       padding: 1rem 3rem;
     }
 

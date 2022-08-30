@@ -38,5 +38,14 @@ export const NavBar = styled.nav`
       background: ${theme.colors.primary};
       transition: all 0.3s ease-in-out;
     }
+
+    @media ${theme.media.large} {
+      > ul li {
+        margin: 0 2rem;
+      }
+      > ul li a {
+        font-size: ${theme.fonts.sizes.small};
+      }
+    }
   `}
 `;
