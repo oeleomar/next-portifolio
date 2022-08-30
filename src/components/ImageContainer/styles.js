@@ -4,13 +4,14 @@ export const ImageContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     img {
-      transition: all 0.3s ease-in-out;
     }
 
-    img:hover {
-      transform: scale(1.05) rotate(5deg);
+    :hover {
+      transform: scale(1.3);
+      z-index: 10;
     }
   `}
 `;
