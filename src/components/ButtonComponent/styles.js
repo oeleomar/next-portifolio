@@ -8,6 +8,7 @@ export const Link = styled.a`
     background: ${theme.colors.primary};
     color: ${theme.colors.dark.first};
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 
     font-size: ${theme.fonts.sizes.small};
     font-family: inherit;
@@ -15,6 +16,11 @@ export const Link = styled.a`
 
     @media ${theme.media.small} {
       width: 3.5rem;
+    }
+
+    :hover {
+      background: ${theme.colors.dark.first};
+      color: ${theme.colors.primary};
     }
   `}
 `;

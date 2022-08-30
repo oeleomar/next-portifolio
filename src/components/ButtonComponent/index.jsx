@@ -5,9 +5,9 @@ import { Github } from '@styled-icons/boxicons-logos/Github';
 import * as Styled from './styles';
 
 export const ButtonComponent = ({ data = [] }) => {
-  const { button_link: linkedIn } = data[0];
-  const { button_link: GithubLink } = data[1];
-  const { button_link: InstagramLink } = data[2];
+  const { button_link: linkedIn = '' } = data[0];
+  const { button_link: GithubLink = '' } = data[1];
+  const { button_link: InstagramLink = '' } = data[2];
 
   return (
     <>

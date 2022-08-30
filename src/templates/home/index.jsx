@@ -1,12 +1,10 @@
 import P from 'prop-types';
 
 import { useState } from 'react';
-import { ButtonComponent } from '../../components/ButtonComponent';
-import { DescriptionComponent } from '../../components/DescriptionComponent';
 
+import { ButtonComponent } from '../../components/ButtonComponent';
 import { SectionComponent } from '../../components/SectionComponent';
 import { TextComponent } from '../../components/TextComponent';
-import { TitleComponent } from '../../components/TitleComponent';
 import { ImageComponent } from '../../components/ImageComponent';
 import { Header } from '../../components/Header';
 

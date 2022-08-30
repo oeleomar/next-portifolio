@@ -46,11 +46,10 @@ export const Container = styled.header`
 export const HeaderLimitator = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    max-width: 120rem;
+    margin-right: 5rem;
     display: flex;
     align-items: center;
     justify-content: end;
-    margin: 0 auto;
   `}
 `;
 

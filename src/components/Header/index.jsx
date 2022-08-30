@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { NavLinks } from '../NavLinks';
-import { TitleComponent } from '../TitleComponent';
 import * as Styled from './styles';
 
 export function Header({ menu = {} }) {
