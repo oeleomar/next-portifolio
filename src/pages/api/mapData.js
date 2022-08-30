@@ -7,6 +7,7 @@ export const mapData = (data = [{}]) => {
       menu = {},
       section_two_colimns: sectionTwoColumns = [],
       project = [],
+      imagesComponent: certificates = [],
     } = {},
   } = data[0];
   const home = sectionTwoColumns[0];
@@ -18,5 +19,6 @@ export const mapData = (data = [{}]) => {
     home,
     about,
     projects,
+    certificates,
   };
 };

@@ -102,11 +102,11 @@ export function ProjectsTemplate({ menu = {}, projects = [] }) {
                 Difícil
               </button>
             </div>
-            <div className="projectsContainer" ref={projectSection}>
+            <Styled.PojectContainer ref={projectSection}>
               {project.map((val) => (
                 <ProjectComponent project={val} key={val.title} />
               ))}
-            </div>
+            </Styled.PojectContainer>
           </div>
         </Styled.SectionDiv>
       </main>

@@ -49,15 +49,6 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       border-bottom: 1px solid ${theme.colors.dark.third};
     }
 
-    > .mainContainer .projectsContainer {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-      gap: 2rem;
-      justify-items: center;
-      transition: all 0.3s ease-in-out;
-      min-height: 25rem;
-    }
-
     @media ${theme.media.large} {
       > .mainContainer {
         margin-top: 25rem;
@@ -77,4 +68,13 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       }
     }
   `}
+`;
+
+export const PojectContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  transition: all 0.3s ease-in-out;
+  min-height: 25rem;
 `;

@@ -14,16 +14,6 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.colors.dark.first};
     font-family: ${({ theme }) => theme.fonts.family.secundary};
-    animation: screen 3s;
-  }
-
-  @keyframes screen {
-    0% {
-      opacity: 0
-    }
-    100% {
-      opacity: 1;
-    }
   }
 
   h1, h2, h3 {
