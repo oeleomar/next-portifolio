@@ -9,7 +9,7 @@ export const InputComponent = ({
   isRequired = false,
 }) => {
   return (
-    <Styled.Container>
+    <Styled.Container required={isRequired}>
       <label htmlFor={id}>{labelText}</label>
       <input
         type={type}
