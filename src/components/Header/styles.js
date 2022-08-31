@@ -50,6 +50,9 @@ export const HeaderLimitator = styled.div`
     display: flex;
     align-items: center;
     justify-content: end;
+    @media ${theme.media.medium} {
+      margin-right: 0;
+    } ;
   `}
 `;
 
