@@ -49,7 +49,7 @@ export const ContactTemplate = ({ data }) => {
                 name="descricao"
                 id="descricao"
                 cols="30"
-                rows="5"
+                rows="3"
                 placeholder="Digite seu recado"
               />
               <input
