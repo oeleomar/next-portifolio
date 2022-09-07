@@ -15,6 +15,7 @@ export const Home = styled.div`
 
     > ${SectionContainer} ${TextComponent}::after {
       content: '';
+
       position: absolute;
       top: 0;
       left: 0;
