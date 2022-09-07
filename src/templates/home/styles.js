@@ -12,5 +12,9 @@ export const Container = styled.div`
       margin-top: 5rem;
       justify-content: center;
     }
+
+    @media ${theme.media.small} {
+      margin-top: 0;
+    }
   `}
 `;
