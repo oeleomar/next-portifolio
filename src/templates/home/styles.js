@@ -7,5 +7,10 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media ${theme.media.medium} {
+      margin-top: 5rem;
+      justify-content: center;
+    }
   `}
 `;
