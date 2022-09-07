@@ -10,8 +10,8 @@ export const mapData = (data = [{}]) => {
       imagesComponent: certificates = [],
     } = {},
   } = data[0];
-  const home = sectionTwoColumns[0];
-  const about = sectionTwoColumns[1];
+  const home = sectionTwoColumns[1];
+  const about = sectionTwoColumns[0];
   const projects = mapProjects(project);
   return {
     title,
