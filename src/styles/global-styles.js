@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.colors.dark.first};
     font-family: ${({ theme }) => theme.fonts.family.secundary};
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {

@@ -11,13 +11,13 @@ export const Home = styled.div`
     > ${SectionContainer} ${TextComponent} {
       padding: 2rem;
       position: relative;
+      z-index: 1;
     }
 
     > ${SectionContainer} ${TextComponent}::after {
       content: '';
-
       position: absolute;
-
+      z-index: -10;
       top: 0;
       left: 0;
       height: 40%;
@@ -48,6 +48,7 @@ export const Home = styled.div`
       animation: goTop 1s;
       animation-fill-mode: forwards;
       animation-delay: 0.5s;
+      z-index: -10;
     }
 
     @keyframes goTop {
@@ -96,6 +97,7 @@ export const Home = styled.div`
 
     > ${SectionContainer} ${ImageContainer} img {
       box-shadow: 10px 10px 0px ${theme.colors.primary};
+      border: 1px ${theme.colors.primary} solid;
     }
   `}
 `;
