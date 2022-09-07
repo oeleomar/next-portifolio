@@ -12,6 +12,7 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       border-radius: 20px;
       padding: 0 5rem;
       padding-bottom: 5rem;
+      margin-top: 10rem;
       animation: downTop 1s;
     }
 
@@ -49,16 +50,9 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       border-bottom: 1px solid ${theme.colors.dark.third};
     }
 
-    @media ${theme.media.large} {
-      > .mainContainer {
-        margin-top: 25rem;
-        margin-top: 10rem;
-      }
-    }
-
-    @media ${theme.media.small} {
+    @media ${theme.media.medium} {
       align-items: flex-end;
-      margin-top: 5rem;
+      margin-top: 10rem;
       > .mainContainer {
         padding: 0 2rem 2rem 2rem;
       }

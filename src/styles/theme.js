@@ -31,8 +31,8 @@ export const theme = {
   },
   media: {
     small: '(max-width: 600px)',
-    medium: '(max-width: 900px)',
-    large: '(max-width: 1366px)',
+    medium: '(max-width: 1000px)',
+    large: '(max-width: 1440px)',
     xlarge: '(min-width: 1367px)',
   },
   spacings: {

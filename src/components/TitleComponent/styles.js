@@ -4,7 +4,7 @@ export const Title = styled.h2`
   ${({ theme }) => css`
     text-align: center;
     font-size: ${theme.fonts.sizes.huge};
-    margin: 5rem 0;
+    margin: 0 0 3rem 0;
 
     @media ${theme.media.medium} {
       font-size: ${theme.fonts.sizes.xlarge};

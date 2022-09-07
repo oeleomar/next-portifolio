@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   ${({ theme }) => css`
-    max-width: 120rem;
+    max-width: 130rem;
     text-align: center;
     margin: 0 auto;
     width: 100%;

@@ -7,7 +7,6 @@ export const Container = styled.div`
     -webkit-animation: topDownImage 1s;
     max-width: 50rem;
     max-height: 50rem;
-    margin-top: 8rem;
 
     > div {
       position: absolute;
@@ -43,8 +42,6 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.large} {
-      margin-top: 8rem;
-
       > img {
         max-width: 45rem;
         max-height: 45rem;

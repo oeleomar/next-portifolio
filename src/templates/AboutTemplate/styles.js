@@ -30,6 +30,7 @@ export const Home = styled.div`
       visibility: hidden;
       animation-fill-mode: forwards;
       animation-delay: 0.5s;
+      overflow-x: hidden;
     }
 
     > ${SectionContainer} ${TextComponent}::before {
@@ -49,6 +50,7 @@ export const Home = styled.div`
       animation-fill-mode: forwards;
       animation-delay: 0.5s;
       z-index: -10;
+      overflow-x: hidden;
     }
 
     @keyframes goTop {
@@ -96,7 +98,7 @@ export const Home = styled.div`
     }
 
     > ${SectionContainer} ${ImageContainer} img {
-      box-shadow: 10px 10px 0px ${theme.colors.primary};
+      box-shadow: 0px 0px 15px 2px ${theme.colors.primary};
       border: 1px ${theme.colors.primary} solid;
     }
   `}

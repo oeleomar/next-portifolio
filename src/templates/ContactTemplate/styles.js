@@ -7,9 +7,9 @@ export const Container = styled.div`
     background: ${theme.colors.dark.third};
     margin: 0 auto;
     margin-bottom: 2rem;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     border-radius: 20px;
-    width: 50%;
+    width: 40%;
     min-width: 30rem;
     margin-top: 10rem;
     animation: downTop 1s;
@@ -29,7 +29,7 @@ export const Container = styled.div`
 
     @media ${theme.media.large} {
       margin-top: 10rem;
-      padding: 1rem 3rem;
+      padding: 1rem 2rem;
     }
 
     @media ${theme.media.medium} {
@@ -47,6 +47,7 @@ export const FormContainer = styled.div`
     input,
     textarea {
       background-color: ${theme.colors.white};
+      resize: none;
     }
 
     label {
@@ -60,7 +61,7 @@ export const FormContainer = styled.div`
 
     input {
       width: 100%;
-      height: 4rem;
+      height: 3rem;
       border-radius: 5px;
       border: none;
       display: block;
@@ -95,6 +96,15 @@ export const FormContainer = styled.div`
     .submit:hover {
       background: ${theme.colors.dark.first};
       color: ${theme.colors.primary};
+    }
+
+    @media ${theme.media.large} {
+      label,
+      textarea,
+      input,
+      .submit {
+        font-size: ${theme.fonts.sizes.small};
+      }
     }
 
     @media ${theme.media.small} {

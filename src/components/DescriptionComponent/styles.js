@@ -7,7 +7,7 @@ export const Container = styled.p`
     font-weight: 500;
     letter-spacing: 1px;
     color: ${theme.colors.primary};
-    margin: 5rem 0;
+    margin: 2rem 0;
 
     @media ${theme.media.medium} {
       margin: 2rem;
