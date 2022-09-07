@@ -14,6 +14,7 @@ export const Container = styled.header`
     height: 8rem;
     width: 100%;
     z-index: 5;
+    background: ${theme.colors.dark.first};
 
     @media ${theme.media.medium} {
       transition: all 0.3s ease-in-out;

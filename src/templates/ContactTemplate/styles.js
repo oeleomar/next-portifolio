@@ -119,6 +119,10 @@ export const ButtonContainer = styled.div`
     margin: 0 auto;
     border-radius: 20px 20px 0 0;
 
+    @media ${theme.media.large} {
+      transform: translateY(-40%);
+    }
+
     @media ${theme.media.small} {
       transform: translateY(0);
     }
