@@ -16,19 +16,21 @@ export function Home({ data = {} }) {
     <>
       <Header menu={menu} />
       <main>
-        <SectionComponent>
-          <Styled.Container>
-            <TextComponent data={home}>
-              <div>
-                <ButtonComponent data={button} />
-              </div>
-            </TextComponent>
-            <TagCloudComponent />
-            {/*  <ImageComponent src={home}>
+        <Styled.BeforeSection>
+          <SectionComponent>
+            <Styled.Container>
+              <TextComponent data={home}>
+                <div>
+                  <ButtonComponent data={button} />
+                </div>
+              </TextComponent>
+              <TagCloudComponent />
+              {/*  <ImageComponent src={home}>
 
           </ImageComponent> */}
-          </Styled.Container>
-        </SectionComponent>
+            </Styled.Container>
+          </SectionComponent>
+        </Styled.BeforeSection>
       </main>
       <footer />
     </>
