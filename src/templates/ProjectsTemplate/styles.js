@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 
 import { Container as SectionContainer } from '../../components/SectionComponent/styles';
-import { NavBar } from '../../components/NavLinks/styles';
 
 export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
   ${({ theme }) => css`
@@ -50,10 +49,19 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       border-bottom: 1px solid ${theme.colors.dark.third};
     }
 
+    @media ${theme.media.large} {
+      > .mainContainer {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 15rem;
+      }
+    }
+
     @media ${theme.media.medium} {
       align-items: flex-end;
-      margin-top: 10rem;
+      margin-top: 5rem;
       > .mainContainer {
+        width: 100%;
         padding: 0 2rem 2rem 2rem;
       }
 
