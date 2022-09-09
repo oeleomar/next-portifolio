@@ -8,6 +8,7 @@ export const Container = styled.div`
     user-select: none;
     transition: all 0.3s ease-in-out;
     animation: topDown 1s;
+    opacity: 0.6;
 
     @keyframes topDown {
       0% {
@@ -25,7 +26,6 @@ export const Container = styled.div`
     }
 
     .tagcloud--item:hover {
-      color: ${theme.colors.third};
       opacity: 1;
     }
 

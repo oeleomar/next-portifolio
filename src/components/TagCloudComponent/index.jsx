@@ -30,12 +30,13 @@ export const TagCloudComponent = () => {
       'CSS-IN-JS',
     ];
     const options = {
-      radius: 350,
+      radius: window.screen.width > 1440 ? 350 : 280,
       maxSpeed: 'normal',
       initSpeed: 'fast',
       direction: 45,
       keep: true,
     };
+    console.log(options.radius);
     TagCloud(container, texts, options);
   }, []);
 
