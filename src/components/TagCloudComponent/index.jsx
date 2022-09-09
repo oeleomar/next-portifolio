@@ -36,7 +36,6 @@ export const TagCloudComponent = () => {
       direction: 45,
       keep: true,
     };
-    console.log(options.radius);
     TagCloud(container, texts, options);
   }, []);
 
