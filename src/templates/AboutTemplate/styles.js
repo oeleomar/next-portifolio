@@ -55,8 +55,8 @@ export const Home = styled.div`
 
     @keyframes goTop {
       0% {
-        top: 80%;
-        left: 80%;
+        top: 70%;
+        left: 70%;
         opacity: 0;
         visibility: hidden;
       }
@@ -70,8 +70,8 @@ export const Home = styled.div`
 
     @keyframes goBottom {
       0% {
-        top: -20%;
-        left: -20%;
+        top: -10%;
+        left: -10%;
         opacity: 0;
         visibility: hidden;
       }

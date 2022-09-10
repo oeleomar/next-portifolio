@@ -4,6 +4,7 @@ import * as Styled from './styles';
 
 import { ProjectComponent } from '../../components/ProjectComponent';
 import { Header } from '../../components/Header';
+import { ParticlesBackground } from '../../components/ParticlesBackground';
 
 export function ProjectsTemplate({ menu = {}, projects = [] }) {
   const [project, setProject] = useState([]);
@@ -68,6 +69,7 @@ export function ProjectsTemplate({ menu = {}, projects = [] }) {
   return (
     <>
       <Header menu={menu} />
+      <ParticlesBackground />
       <main>
         <Styled.SectionDiv>
           <div className="mainContainer">

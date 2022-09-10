@@ -7,7 +7,7 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
     > .mainContainer {
       width: 100%;
       min-height: 100%;
-      background: ${theme.colors.dark.third};
+      background: ${theme.colors.dark.softThird};
       border-radius: 20px;
       padding: 0 5rem;
       padding-bottom: 5rem;
@@ -32,8 +32,8 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
       transform: translateY(-100%);
     }
     > .mainContainer .buttonContainer button {
-      background: ${theme.colors.dark.first};
-      border: 1px solid ${theme.colors.dark.first};
+      background: ${theme.colors.dark.softFirstAll};
+      border: 1px solid ${theme.colors.dark.softFirstAll};
       color: ${theme.colors.white};
       font-size: ${theme.fonts.sizes.small};
       padding: 0.5rem 0rem;
@@ -44,7 +44,7 @@ export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
 
     > .mainContainer .buttonContainer button.active {
       color: ${theme.colors.primary};
-      background: ${theme.colors.dark.third};
+      background: ${theme.colors.dark.softThird};
       border: 1px solid ${theme.colors.primary};
       border-bottom: 1px solid ${theme.colors.dark.third};
     }

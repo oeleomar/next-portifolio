@@ -4,7 +4,7 @@ import { Link } from '../../components/ButtonComponent/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.dark.third};
+    background: ${theme.colors.dark.softThird};
     margin: 0 auto;
     margin-bottom: 2rem;
     padding: 1rem 3rem;
@@ -123,19 +123,9 @@ export const FormContainer = styled.div`
 
 export const ButtonContainer = styled.div`
   ${({ theme }) => css`
-    transform: translateY(-80%);
-    background: ${theme.colors.dark.third};
     max-width: 20rem;
     margin: 0 auto;
     border-radius: 20px 20px 0 0;
-
-    @media ${theme.media.large} {
-      transform: translateY(-40%);
-    }
-
-    @media ${theme.media.small} {
-      transform: translateY(0);
-    }
 
     > ${Link} {
       @media ${theme.media.small} {
