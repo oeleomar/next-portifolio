@@ -3,7 +3,6 @@ import { ButtonComponent } from '../../components/ButtonComponent';
 import { Header } from '../../components/Header';
 import { InputComponent } from '../../components/InputComponent';
 import { SectionComponent } from '../../components/SectionComponent';
-import { ParticlesBackground } from '../../components/ParticlesBackground';
 import * as Styled from './styles';
 
 export const ContactTemplate = ({ data }) => {
@@ -12,7 +11,6 @@ export const ContactTemplate = ({ data }) => {
   return (
     <>
       <Header menu={menu} />
-      <ParticlesBackground />
       <SectionComponent>
         <Styled.Container>
           <Styled.ButtonContainer>
