@@ -25,10 +25,6 @@ export const Container = styled.div`
       font-size: ${theme.fonts.sizes.medium};
     }
 
-    .tagcloud--item:hover {
-      opacity: 1;
-    }
-
     @media ${theme.media.large} {
       width: 500px;
       height: 500px;
