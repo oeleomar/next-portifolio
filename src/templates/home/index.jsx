@@ -11,7 +11,7 @@ import * as Styled from './styles';
 
 export function Home({ data = {} }) {
   const { menu, home } = data;
-  const [button, setButton] = useState(home.button_links);
+  const [button] = useState(home.button_links);
   return (
     <>
       <Header menu={menu} />

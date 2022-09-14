@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { Container as SectionContainer } from '../../components/SectionComponent/styles';
 
 export const SectionDiv = styled(SectionContainer).attrs({ as: 'div' })`
+  overflow: hidden;
   ${({ theme }) => css`
     > .mainContainer {
       width: 100%;
